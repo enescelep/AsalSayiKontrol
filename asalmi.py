@@ -8,7 +8,7 @@ sayi=int(input("Pozitif bir sayı giriniz: "))
 Bu fonksiyonda klavyeden girilen sayının toplam çarpan sayısını bulduk.
 Bilirsiniz, matematikte asal sayıların çarpan sayısı 2'dir.
 Bu yüzden asal çarpan sayısı 2'den büyük olan veya 1 olan sayılar asal değildir.
-("Tamam 2'den fazlayı anladık örnek:6 ama 1 ne alaka?" diyebilirsiniz, haklısınız.
+("Tamam 2'den fazlayı anladık örnek:6 ama 1 ne alak?" diyebilirsiniz, haklısınız.
 1 sayısı asal olarak kabul edilmez. 1'in kendisinden başka çarpanı yoktur.)
 """
 def toplamCarpanSayisi(f):
@@ -24,11 +24,11 @@ def toplamCarpanSayisi(f):
 Bu fonksiyonda 2'den başlayarak girdiğimiz sayıya girene kadar olan sayıları bölüyoruz.
 Eğer sayı tam bölünüyorsa 'c' sayacını arttırıyoruz.
 Bu fonksiyonun amacını şöyle özetleyebilirim:
-Gördüğünüz gibi fonksiyona 'g+1' yazmak yerine 'g' yazdık. 
+Gördüğünüz gibi fonskiyona 'g+1' yazmak yerine 'g' yazdık. 
 Bu girdiğimiz sayının bir eksiğine kadar gelmesi demektir.
 Aynı şekilde 1 yerine 2'den başlattık.
 Şu an anlamış olabilirsiniz bu fonksiyonda amacımız:
-Sayının kendisi ve 1 hariç olan çarpanlarını bulup 'c' sayacını arttırmak.
+Sayının kendisi ve 1 hariç olan sayılarını bulup 'c' sayacını arttırmak.
 """
 
 def carpanBol(g):
@@ -46,6 +46,9 @@ if sayi <1:
     sistem.exit(0)
 elif sayi==2:
     print(a)
+    sistem.exit(0)
+elif sayi%2==0:
+    print(b)
     sistem.exit(0)
 elif sayi==1:
     print(b)
