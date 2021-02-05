@@ -10,10 +10,12 @@ Bu yüzden asal çarpan sayısı 2'den büyük olan veya 1 olan sayılar asal de
 """
 def toplamCarpanSayisi(f):
     carpanSayisi=0
-    for x in range(1,f+1):
+    for x in range(1,(f/2)+1):
         if f%x==0:
             carpanSayisi+=1
-    if carpanSayisi>2 or carpanSayisi==1:
+        if carpanSayisi>2:
+            print("Sayı asal değildir")
+    if carpanSayisi==1:
         print("Sayı asal değildir")
     else: print("Sayı asaldır")
 
